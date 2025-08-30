@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+     }
+    body{
+    background-color: blue;
+     }
+    .app{
+        background-color: #fff;
+        width: 90%;
+        max-width: 600px;
+        margin: 100px auto 0;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    .app h1{
+        font-weight: 25px;
+        color: pink;
+        font-weight: 600;
+        border-bottom: 2px solid #333;
+        padding-bottom: 10px;
+    }
+    .quiz{
+        padding: 20px 0 ;
+    }
+    .quiz h2{
+        font-size: 18px;
+        color: #001e4d;
+        font-size: 18px;
+    }
+    .btn{
+        background: #fff;
+        color: #222;
+        font-weight: 500;
+        width: 100%;
+        border: 1px soild #222;
+        padding: 10px;
+        margin: 10px 0;
+        text-align: left;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    .btn:hover{
+        background: plum;
+        color: #fff;
+
+    }
+    .next-btn{
+        background-color: #001e4d;
+        color: white;
+        font-weight: 500;
+        width: 150px;
+        border-radius: 4px;
+        padding: 10px;
+        margin: 20px auto 0;
+        cursor: pointer;
+        display: block;
+    }
+    .next-btn:hover{
+        background: plum;
+        color: #fff;
+    }
+    .button a{
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;   
+}
+
+    </style>
+</head>
+<body>
+    <div class="app">
+        <h1>Temi Quiz 😊</h1>
+        <div class="quiz">
+          <h2 id="question"></h2>
+          <div id="answer-buttons"></div>
+          <button id="next-btn" class="next-btn" style="display:none;">Next</button>
+          <h2 id="result-text" style="display:none; margin-bottom:20px;"></h2>
+          <div id="button-container"></div>
+        </div>
+      </div>
+   
+
+   
+</body>
+</html>
